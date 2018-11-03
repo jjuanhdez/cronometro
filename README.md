@@ -1,4 +1,4 @@
-# cronometro
+## Cronómetro
 
 Aplicación de un sencillo pero potente cronómetro.
 - Detiene el tiempo en milisegundos.
