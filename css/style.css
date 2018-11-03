@@ -1,1 +1,121 @@
-css
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #FF9500;
+  color: #FFF;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+h1 {
+  margin: 0;
+}
+
+ol {
+  display: block;
+  font-size: 3.5vh;
+  height: 37vh;
+  margin-bottom: 5vh;
+  overflow: auto; 
+  text-align: center;
+  width: 100%;
+}
+
+.about {
+  text-align: center;
+}
+
+.about a {
+  display: block;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  font-size: 3vh;
+}
+
+.about h1 {
+  display: block;
+  font-size: 3.3vh;
+  padding-top: 5vh;
+}
+
+.button {
+  background: #E66000;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 3.5vh;
+  height: 10vh;
+  line-height: 10vh;
+  margin-left: 5vw;
+  margin-bottom: 2vh;
+  text-align: center;
+  width: 40vw;
+}
+
+.button:hover {
+  background: #330000;
+}
+
+.clock {
+  font-size: 3.5vh;
+  line-height: 15vh;
+  height: 15vh;
+  text-align: center;
+  text-shadow: -1px 1px #000;
+  width: 100%;
+}
+
+.close {
+  float: right;
+  height: 6.5vh;
+  margin-right: 1vw;
+  margin-top: 0.75vh;
+}
+
+.logo {
+  float: left;
+  height: 7vh;
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+}
+
+.menu {
+  background: #E66000;
+  display: block;
+  height: 8vh;
+  line-height: 8vh;
+  width: 100%;
+}
+
+.menu h2 {
+  float: left;
+  font-size: 4vh;
+  margin-left: 1vw;
+}
+
+.acercade {
+  background: #E66000;
+  bottom: 0;
+  display: block;
+  font-size: 3vh;
+  height: 8vh;
+  line-height: 8vh;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.acercade:hover {
+  background: #330000;
+}
