@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+	xmlns:gap   = "http://phonegap.com/ns/1.0"
+	id          = "app.cronometro.example"
+	versionCode = "1"
+	version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+	<icon src="icon.png" />
+
+	<name>Cronómetro</name>
+
+	<description>
+      Aplicación de un sencillo pero potente cronómetro.
+- Detiene el tiempo en milisegundos.
+* Cantidades ilimitadas de vueltas.
+* Diseño moderno y colores individuales.
+* Todos los cronómetros a la vista.
+- Sin consumo de energía en el fondo.
+- Detiene el tiempo incluso si el dispositivo está apagado.
+- Completamente libre de publicidad.
+- Gratis
+- No se necesitan permisos.
+Con esta aplicación sin publicidad, su dispositivo obtiene un potente cronómetro. Puede agregar o cambiar entre los cronómetros de ejecución en paralelo fácilmente con un gesto de deslizamiento intuitivo. Si tiene muchos cronómetros paralelos, no perderá la pista porque construimos un reloj de todos los cronómetros. ¿Desea continuar procesando con sus datos desde el cronómetro? ¡No hay problema! Una exportación flexible de todos los datos lo permite. Además, el tiempo se detendrá en segundo plano sin consumir la batería. Además, puede individualizar su cronómetro cambiando el color de la interfaz de usuario. Esta aplicación está totalmente libre de anuncios y la instalación no le costará ningún céntimo. 
+Además, se puede utilizar como un juego para parar en tan sólo 10 segundos.
+	</description>
+
+	<author email="jjuanhdez@gmail.com" href="https://aquiesta.org">
+      J. Juan Hernández
+	</author>
+	
+	<content src="index.html" />
+	
+<!-- Customize your app and platform with the preference element. -->
+	<!-- all platforms -->
+	<preference name="phonegap-version" value="cli-6.5.0" />
+	<preference name="orientation" value="portrait" /> <!-- default, landscape, or portrait. -->
+	<preference name="fullscreen" value="true" />
+	
+	<!-- iOS only -->
+	<preference name="target-device" value="universal" /> <!-- handset, tablet, or universal. -->
+	<preference name="prerendered-icon" value="true" />
+	<preference name="detect-data-types" value="true" />
+	<preference name="exit-on-suspend" value="true" />
+	<preference name="deployment-target" value="7.0" />
+
+	<!-- Android only -->
+	<preference name="android-build-tool" value="ant|gradle" />
+	<preference name="android-minSdkVersion" value="14" />
+	<preference name="android-maxSdkVersion" value="19" />
+	<preference name="android-targetSdkVersion" value="12" />
+	<preference name="android-installLocation" value="auto" />
+	<preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
+	
+	<!-- Windows only -->
+	<preference name="windows-arch" value="anycpu" /> <!-- anycpu, arm, x86, and x64. -->
+	<preference name="windows-appx-target" value="uap" /> <!-- uap (Windows 10 Mobile / Universal), 8.1-phone, 8.1-win -->
+	
+</widget>

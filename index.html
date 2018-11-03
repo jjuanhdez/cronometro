@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+<!--  <script type="text/javascript">
+	//Global var to store a reference to the opened window
+	var openedWindow;
+	function openWindow(){
+		openedWindow = window.open('index.html');
+	}
+	function closeOpenedWindow(){
+		openedWindow.close();
+	}
+</script>  -->
+
+  <title>Cron&oacute;metro</title>
+</head>
+<body onload="show()">
+    <div class="menu">
+		<img class="logo" src="img/timer.png" alt="Logo">
+		<h2>Cron&oacute;metro</h2>
+		<!--<img class="close" src="img/close.png" alt="Cerrar" onclick="cerrar();">
+		<input class="close" id="image" type="image" alt="Cerrar" src="img/close.png" onclick="javascript: self.open('', '_parent', ''); javascript: self.close(opener = null);">-->
+    </div>
+	
+    <div class="clock"><h1 id="time"></h1></div>
+    <ol id="laps" reversed></ol>
+    <div id="start" class="button" onclick="start();">Empezar</div>
+	<div id="reset" class="button" onclick="reset();">Resetear</div>
+    <div id="lap" class="button" onclick="lap();">Vuelta</div>
+    <div id="clear" class="button" onclick="limpa();">Limpiar</div>
+    <a href="acercade.html" class="acercade">Acerca de</a>
+</body>
+</html>
