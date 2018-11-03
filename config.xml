@@ -8,7 +8,7 @@
 <!-- versionCode is optional and Android only -->
 	<icon src="/img/icons/icon128x128.png" />
 
-	<name>Cronómetro</name>
+	<name>Cronometro</name>
 
 	<description>
       Aplicación de un sencillo pero potente cronómetro.
