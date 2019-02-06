@@ -1,4 +1,4 @@
-var	clsStopwatch = function() { 
+var	clsStopwatch = function() {
 	var startAt	= 0;	
 	var	lapTime	= 0;	
 
@@ -81,7 +81,7 @@ function reset() {
 }
 
 function lap() {
-  $('#laps').prepend('<li>'+formatTime(x.time())+'</li>');
+  $('#laps').prepend('<li>' + formatTime(x.time()) + '</li>');
 }
 
 function limpa() {
