@@ -1,6 +1,14 @@
+@font-face{
+    font-family: Orbitron;
+    src:url(../fonts/alarm.ttf);
+}
 * {
-  padding: 0;
+  box-sizing:border-box;
   margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -19,7 +27,7 @@ a {
   color: #FFF;
 }
 
-h1 {
+h1 { 
   margin: 0;
 }
 
@@ -31,25 +39,55 @@ ol {
   overflow: auto; 
   text-align: center;
   width: 100%;
+  font-family: Orbitron;
 }
 
-.about {
-  text-align: center;
-}
-
-.about a {
+/* - Cabecera - */
+.cabecera {
+  background: #F44336;
   display: block;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  height: 8vh;
+  line-height: 8vh;
+  width: 100%;
+  
+}
+.cabecera h2 {
+  float: left;
+  font-size: 4vh;
+  margin-left: 1vw;
+}
+
+.logo {
+  float: left;
+  height: 7vh;
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+}
+
+.close {
+  float: right;
+  height: 6.5vh;
+  margin-right: 1vw;
+  margin-top: 0.75vh;
+}
+
+/* - Pie de página - */
+.pie {
+  background: #E66000;
+  bottom: 0;
+  display: block;
   font-size: 3vh;
+  height: 8vh;
+  line-height: 8vh;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+.pie:hover {
+  background: #330000;
 }
 
-.about h1 {
-  display: block;
-  font-size: 3.3vh;
-  padding-top: 5vh;
-}
-
+/* - Cuerpo - */
 .button {
   background: #E66000;
   border-radius: 5px;
@@ -62,7 +100,6 @@ ol {
   text-align: center;
   width: 40vw;
 }
-
 .button:hover {
   background: #330000;
 }
@@ -74,48 +111,44 @@ ol {
   text-align: center;
   text-shadow: -1px 1px #000;
   width: 100%;
+  font-family: Orbitron;
 }
 
-.close {
-  float: right;
-  height: 6.5vh;
-  margin-right: 1vw;
-  margin-top: 0.75vh;
-}
-
-.logo {
-  float: left;
-  height: 7vh;
-  margin-left: 1vw;
-  margin-top: 0.5vh;
-}
-
-.menu {
-  background: #E66000;
-  display: block;
-  height: 8vh;
-  line-height: 8vh;
-  width: 100%;
-}
-
-.menu h2 {
-  float: left;
-  font-size: 4vh;
-  margin-left: 1vw;
-}
-
-.acercade {
-  background: #E66000;
-  bottom: 0;
-  display: block;
-  font-size: 3vh;
-  height: 8vh;
-  line-height: 8vh;
-  position: fixed;
+.cuerpo{
   text-align: center;
-  width: 100%;
+}
+.cuerpo a {
+  display: block;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  font-size: 3vh;
+}
+.cuerpo h1 {
+  display: block;
+  font-size: 3.3vh;
+  padding-top: 5vh;
 }
 
-.acercade:hover {
-  background: #330000;
-}
+/* -- */
+
+.cronometro{
+    width:200px;
+    height:100px;
+    top:50%;
+    left:50%;
+    position:absolute;
+    margin-top:-50px;
+    margin-left:-100px;
+    text-align:center;
+} 
+.boton{display:inline-block;width:32px;height:32px;position:relative;}
+#hms{
+    height:68px;
+    padding:5px 0;
+    font-size:50px;
+    color:#000;
+    font-family: Orbitron;
+ }
+    .start{background:url(../img/start.png) 0 0 no-repeat;}
+    .stop{background:url(../img/pause.png) 0 0 no-repeat;}
+    .reiniciar{background:url(../img/delete.png)0 0 no-repeat;}
