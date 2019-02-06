@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  
 
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Orbitron" />
 <!--  <script type="text/javascript">
 	//Global var to store a reference to the opened window
 	var openedWindow;
@@ -24,19 +25,29 @@
   <title>Cron&oacute;metro</title>
 </head>
 <body onload="show()">
-    <div class="menu">
+	<script type="text/javascript">document.write('');</script>
+	<noscript>
+		<p class="error"><img src="img/alert.png"><b>Â¡ERROR!</b>Â¡JavaScript debe estar habilitado!</p>
+	</noscript>
+
+    <header>
+	<div class="cabecera">
 		<img class="logo" src="img/timer.png" alt="Logo">
 		<h2>Cron&oacute;metro</h2>
 		<!--<img class="close" src="img/close.png" alt="Cerrar" onclick="cerrar();">
 		<input class="close" id="image" type="image" alt="Cerrar" src="img/close.png" onclick="javascript: self.open('', '_parent', ''); javascript: self.close(opener = null);">-->
     </div>
+	</header>
 	
     <div class="clock"><h1 id="time"></h1></div>
-    <ol id="laps" reversed></ol>
-    <div id="start" class="button" onclick="start();">Empezar</div>
+    
+	<ol id="laps" reversed></ol>
+    
+	<div id="start" class="button" onclick="start();">Empezar</div>
 	<div id="reset" class="button" onclick="reset();">Resetear</div>
     <div id="lap" class="button" onclick="lap();">Vuelta</div>
     <div id="clear" class="button" onclick="limpa();">Limpiar</div>
-    <a href="acercade.html" class="acercade">Acerca de</a>
+	
+	<a class="pie" href="acercade.html">Acerca de</a>
 </body>
 </html>
